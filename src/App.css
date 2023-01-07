@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap');
+
+body {
+  font-family: 'Overpass', 'Ubuntu';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+  max-width: 1440px;
+  padding: 0 25px;
+}
+
+@media screen and (min-width: 435px) {
+  .container {
+    padding: 0 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (min-width: 835px) {
+  .container {
+    padding: 0 100px;
   }
 }
