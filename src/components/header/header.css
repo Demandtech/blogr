@@ -1,9 +1,8 @@
-.header {
-  background: url(../../assets/images/bg-pattern-intro-desktop.svg)
-    hsl(355, 100%, 74%) center no-repeat;
-  height: 100vh;
-  background-size: cover;
+header {
+  background: url(../../assets/images/bg-pattern-intro-desktop.svg) no-repeat
+    center hsl(355, 100%, 74%);
   font-family: 'Overpass';
+  border-bottom-left-radius: 80px;
 }
 .nav-wrapper {
   display: flex;
@@ -64,7 +63,7 @@
   transition: 0.5s;
 }
 
-.nav-item-header:hover{
+.nav-item-header:hover {
   color: hsl(100, 100%, 100%);
 }
 
@@ -109,16 +108,16 @@
 }
 
 @media screen and (max-width: 836px) {
-  .header {
+  header {
     background: url(../../assets/images/bg-pattern-intro-mobile.svg) center
       no-repeat hsl(355, 100%, 74%);
-    background-size: cover;
   }
   .nav-item-header img {
     content: url(../../assets/images/icon-arrow-dark.svg);
   }
 
   .desktop-nav-btns {
+    background: none;
     display: none;
   }
 

@@ -3,10 +3,11 @@ import './header.css'
 import logo from '../../assets/images/logo.svg'
 import menuOpen from '../../assets/images/icon-hamburger.svg'
 import menuClose from '../../assets/images/icon-close.svg'
-import arrowDark from '../../assets/images/icon-arrow-dark.svg'
+//import arrowDark from '../../assets/images/icon-arrow-dark.svg'
 import arrowLight from '../../assets/images/icon-arrow-light.svg'
+import Hero from '../hero/Hero'
 
-function Header() {
+function NavBar() {
   const [navOpen, setNavOpen] = useState(false)
   const [companyDropdown, setCompanyDropDown] = useState(false)
   const [connectDropdown, setConnectDropDown] = useState(false)
@@ -16,13 +17,10 @@ function Header() {
     setNavOpen(!navOpen)
   }
 
-  // const handleHover = ()=>{
-
-  // }
   return (
-    <header className='header'>
+    <nav className='header'>
       <div className='container'>
-        <nav>
+        
           <div className='nav-wrapper'>
             <div className='logo-wrapper'>
               <div className='logo'>
@@ -110,8 +108,17 @@ function Header() {
               </a>
             </div>
           </div>
-        </nav>
+        
       </div>
+    </nav>
+  )
+}
+
+const Header = () => {
+  return (
+    <header>
+      <NavBar />
+      <Hero />
     </header>
   )
 }
